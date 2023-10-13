@@ -10,7 +10,10 @@ This is a guide for installing the free molecular viewer, Biovia Discovery Studi
 
 ##### 000. You will also need to locate a source for libpng15.so.15. This will be added to the _~/progs/BIOVIA2021/DiscoveryStudio2021/lib_ directory in step 23 below.
                   
-                  Hello Community!
+
+                  https://ubuntuforums.org/showthread.php?t=2138623
+                  
+                  Hello Community! 
                   
                   I actually found a way to install it properly:
                   
