@@ -111,9 +111,9 @@ chmod +x lp_setup_linux.sh`
 
 ##### 20. Install tcsh and the License
 
-`sudo apt install tcsh
+`sudo apt install tcsh`
 
-./lp_echovars`
+`./lp_echovars`
 
 ##### 21. Go to bin folder
 
@@ -130,6 +130,6 @@ chmod +x lp_setup_linux.sh`
 
 ##### 26. Run the DiscoveryStudio
 
-./DiscoveryStudio2021
+`./DiscoveryStudio2021`
 
 ##### 27. If all goes well, enjoy using DSV2021 on your Ubuntu 22.04 machine.
