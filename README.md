@@ -10,7 +10,7 @@ This is a guide for installing the free molecular viewer, Biovia Discovery Studi
 
 ##### 000. You will also need to locate a source for libpng15.so.15. This will be added to the _~/progs/BIOVIA2021/DiscoveryStudio2021/lib_ directory in step 23 below.
                   
-                  'Hello Community!
+                  Hello Community!
                   
                   I actually found a way to install it properly:
                   
@@ -18,18 +18,18 @@ This is a guide for installing the free molecular viewer, Biovia Discovery Studi
                   
                   first Download library (in this case libpng15)
                   
-                  http://sourceforge.net/projects/libpng/files/libpng15/
+                  `http://sourceforge.net/projects/libpng/files/libpng15/`
                   
                   locate the downloaded file and extract to Downloads folder.
                   
                   now go to TERMINAL and type
                   
-                  cd Downloads/libpng-1.5.15
+                  `cd Downloads/libpng-1.5.15
                   
                   ./configure --prefix=usr/local/libpng
                   make check
                   sudo make install
-                  make check
+                  make check`
                   
                   Congratulations you just installed the libpng
                   
@@ -42,7 +42,7 @@ This is a guide for installing the free molecular viewer, Biovia Discovery Studi
                   
                   now we will create a NEW LINK (shortcut) of that file to "/usr/lib/"
                   
-                  sudo ln -s /usr/local/libpng/lib/libpng15.so.15 /usr/lib/libpng15.so.15
+                  `sudo ln -s /usr/local/libpng/lib/libpng15.so.15 /usr/lib/libpng15.so.15`
                   
                   
                   you can now successfully execute applications that require libpng15.so.15 '
