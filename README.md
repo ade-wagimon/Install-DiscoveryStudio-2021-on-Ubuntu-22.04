@@ -4,11 +4,11 @@
 
 This is a guide for installing the free molecular viewer, Biovia Discovery Studio Viewer 2021 (Biovia DSV 2021) on a computer running Ubuntu 22.04. This procedure worked for me, but "your mileage may vary".
 
-### 0. Before carrying out the following steps, get the System Requirements for installing DSV2021 in Linux. The names of the system libraries are for RHEL or CentOS. Find the equivalent library names for Ubuntu and determine if these are installed on your system. If the required libraries are not installed, locate and install them.
+##### 0. Before carrying out the following steps, get the System Requirements for installing DSV2021 in Linux. The names of the system libraries are for RHEL or CentOS. Find the equivalent library names for Ubuntu and determine if these are installed on your system. If the required libraries are not installed, locate and install them.
 
-### 00. This guide assumes that you will be installing DSV2021 in ~/progs/BIOVIA2021, where "~/" is your home directory and "progs" is a subdirectory in home where you install programs. On my own system, I use the name "zware" for "progs".
+##### 00. This guide assumes that you will be installing DSV2021 in _~/progs/BIOVIA2021_, where "~/" is your home directory and "progs" is a subdirectory in home where you install programs. On my own system, I use the name "zware" for "progs".
 
-### 000. You will also need to locate a source for libpng15.so.15. This will be added to the ~/progs/BIOVIA2021/DiscoveryStudio2021/lib directory in step 23 below.
+##### 000. You will also need to locate a source for libpng15.so.15. This will be added to the _~/progs/BIOVIA2021/DiscoveryStudio2021/lib_ directory in step 23 below.
                   
                   'Hello Community!
                   
@@ -49,84 +49,84 @@ This is a guide for installing the free molecular viewer, Biovia Discovery Studi
 
 
 
-### 1. Download BIOVIA_2021.DS2021.Client.bin to ~/Desktop
+##### 1. Download BIOVIA_2021.DS2021.Client.bin to ~/Desktop
 
-### 2. Executable File
+##### 2. Executable File
 
 `chmod +x BIOVIA_2021.DS2021.Client.bin`
 
-### 3. Extracting the installer
+##### 3. Extracting the installer
 
 `./BIOVIA_2021.DS2021.Client.bin --noexec --target ~/progs/BIOVIA2021`
 
-### 4. Go to the extracted installer folder
+##### 4. Go to the extracted installer folder
 
 cd ~/progs/BIOVIA2021
 
-### 5. Open _install_DSClient.sh_ with a text editor
+##### 5. Open _install_DSClient.sh_ with a text editor
 
-### 6. Change _#!/bin/sh_ to _#!/bin/bash_
+##### 6. Change _#!/bin/sh_ to _#!/bin/bash_
 
-### 7. Insert _shopt -s expand_aliases_ above _alias echoe="echo -e"_ and save file.
+##### 7. Insert _shopt -s expand_aliases_ above _alias echoe="echo -e"_ and save file.
 
-### 8. Make executable:
+##### 8. Make executable:
 
 `chmod +x install_DSClient.sh`
 
-### 9. Run installer:
+##### 9. Run installer:
 
 `./install_DSClient.sh`
 
-### 10. When prompted to select install location, choose [2], write
+##### 10. When prompted to select install location, choose [2], write
 
 `~/progs/BIOVIA2021/DiscoveryStudio2021`
 
-### 11. Change Directory
+##### 11. Change Directory
 
 `cd ~/progs/BIOVIA2021/DiscoveryStudio2021/lp_installer`
 
 
-### 14.  Make executable
+##### 14.  Make executable
 `
 chmod +x lp_setup_linux.sh`
 
-### 15. Extract the License Installer
+##### 15. Extract the License Installer
 
 `./lp_setup_linux.sh --noexec --target ~/progs/BIOVIA2021`
 
-### 16. Go to license installer
+##### 16. Go to license installer
 
 `cd ~/progs/BIOVIA2021/LicensePack/etc`
 
-### 17.
+##### 17.
 
 ./lp_config
 
-### 18. Open _lp_echvars_ in a text editor
+##### 18. Open _lp_echvars_ in a text editor
 
-### 19. change _#! /bin/csh -f_ to _#! /bin/tcsh_ and save and close file
+##### 19. change _#! /bin/csh -f_ to _#! /bin/tcsh_ and save and close file
 
-### 20. Install tcsh and the License
+##### 20. Install tcsh and the License
 
 _sudo apt install tcsh_
 
 _./lp_echovars_
 
-### 21. Go to bin folder
+##### 21. Go to bin folder
 
 `cd ~/progs/BIOVIA2021/DiscoveryStudio2021/bin
 `
-### 22. Configurate the license
+##### 22. Configurate the license
 
 `./config_lp_location ~/progs/BIOVIA2021/LicensePack/`
 
-### 23. copy your copy of _libpng15.so.15_ into ~/progs/BIOVIA2021/DiscoveryStudio2021/lib
+##### 23. copy your copy of _libpng15.so.15_ into _~/progs/BIOVIA2021/DiscoveryStudio2021/lib_
 
 
-### 25. Open _DiscoveryStudio2021_ in a text editor; change _ACCELRYS_DEBUG=0_ to _ACCELRYS_DEBUG=1_. Then when DSV is started via the terminal, you will get a verbose readout that can be inspected for errors.
+##### 25. Open _DiscoveryStudio2021_ in a text editor; change _ACCELRYS_DEBUG=0_ to _ACCELRYS_DEBUG=1_. Then when DSV is started via the terminal, you will get a verbose readout that can be inspected for errors.
 
-### 26. Run the DiscoveryStudio
+##### 26. Run the DiscoveryStudio
 
 ./DiscoveryStudio2021
 
-### 27. If all goes well, enjoy using DSV2021 on your Ubuntu 22.04 machine.
+##### 27. If all goes well, enjoy using DSV2021 on your Ubuntu 22.04 machine.
