@@ -63,9 +63,9 @@ This is a guide for installing the free molecular viewer, Biovia Discovery Studi
 
 cd ~/progs/BIOVIA2021
 
-### 5. Open _"install_DSClient.sh"_ with a text editor
+### 5. Open _install_DSClient.sh_ with a text editor
 
-### 6. Change _"#!/bin/sh"_ to _"#!/bin/bash"_
+### 6. Change _#!/bin/sh_ to _#!/bin/bash_
 
 ### 7. Insert _shopt -s expand_aliases_ above _alias echoe="echo -e"_ and save file.
 
