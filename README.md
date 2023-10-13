@@ -100,17 +100,17 @@ chmod +x lp_setup_linux.sh`
 
 ##### 17.
 
-./lp_config
-
+`./lp_config
+`
 ##### 18. Open _lp_echvars_ in a text editor
 
 ##### 19. change _#! /bin/csh -f_ to _#! /bin/tcsh_ and save and close file
 
 ##### 20. Install tcsh and the License
 
-_sudo apt install tcsh_
+`sudo apt install tcsh
 
-_./lp_echovars_
+./lp_echovars`
 
 ##### 21. Go to bin folder
 
