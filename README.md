@@ -45,7 +45,7 @@ This is a guide for installing the free molecular viewer, Biovia Discovery Studi
                   `sudo ln -s /usr/local/libpng/lib/libpng15.so.15 /usr/lib/libpng15.so.15`
                   
                   
-                  you can now successfully execute applications that require libpng15.so.15 '
+                  you can now successfully execute applications that require libpng15.so.15 
 
 
 
